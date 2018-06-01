@@ -1,7 +1,79 @@
 body {
     margin: 0;
-    background: linear-gradient(#ff0000, orange, yellow, green, blue, purple);
+    /* background-color: #ffa500; */
     width: 100vw;
     min-height: 100vh;
     overflow: auto;
+}
+
+.ctr {
+    width: 100%;
+    min-height: inherit;
+}
+
+.ix_home {
+    width: 100%;
+    min-height: inherit;
+    background-color: #ffa500;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.ix_start_hold {
+    display: none;
+}
+
+.ix_name_ctr {
+    margin: 25px 0px;
+    display: grid;
+    justify-content: center;
+}
+
+.ix_name {
+    margin: 0;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.ix_form_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ix_form_button_ctr {
+    margin: 0px 25px;
+}
+
+.ix_form_button {
+    font-size: 24px;
+    background-color: #00000059;
+    border: 0;
+    color: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.ix_form_button:hover {
+    background-color: #000000;
+}
+
+.ix_login_hold {
+    /* display: none; */
+}
+
+.ix_login_name_ctr {
+    margin: 25px 0px;
+    display: grid;
+    justify-content: center;
+}
+
+.ix_login_name {
+    margin: 0;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
 }
