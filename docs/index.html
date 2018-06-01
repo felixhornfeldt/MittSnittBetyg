@@ -18,7 +18,8 @@
             <link rel="icon" href="" sizes="32x32" />
             
             <!-- Icon library FB TW IG etc. -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+            <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
              
             <!-- JS Code -->
             <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -27,10 +28,10 @@
 		<body>
             <div class="ctr">
                 <div class="ix_home">
+                    <div class="ix_name_ctr">
+                        <h1 class="ix_name">MittSnittBetyg</h1>
+                    </div>
                     <div class="ix_start_hold">
-                        <div class="ix_name_ctr">
-                            <h1 class="ix_name">MittSnittBetyg</h1>
-                        </div>
                         <div class="ix_form_buttons">
                             <div class="ix_form_button_ctr" id="ix_form_button_login_ctr">
                                 <button class="ix_form_button" id="ix_form_button_login">Logga in</button>
@@ -43,15 +44,26 @@
                     <div class="ix_login_hold">
                         <div class="ix_login_form_ctr">
                             <form action="./" method="post" class="ix_login_form">
-                                <div class="ix_login_name_ctr">
-                                    <h1 class="ix_login_name">Logga in</h1>
-                                </div>
                                 <input type="text" name="uid" class="ix_login_input">
-                                <input type="text" name="pwd" class="ix_login_input">
+                                <input type="password" name="pwd" class="ix_login_input">
+                                <button type="submit" name="login_submit_b" class="ix_login_button">Logga in</button>
                             </form>
+                            <i class="far fa-arrow-alt-circle-left"></i>
                         </div>
                     </div>
-                    <div class="ix_register_hold"></div>
+                    <div class="ix_register_hold">
+                        <div class="ix_register_form_ctr">
+                            <form action="./" method="post" class="ix_register_form">
+                                <input type="text" name="firstname" class="ix_register_input" placeholder="Förnamn">
+                                <input type="text" name="lastname" class="ix_register_input" placeholder="Efternamn">
+                                <input type="email" name="mail" class="ix_register_input" placeholder="Email">
+                                <input type="text" name="uid" class="ix_register_input" placeholder="Användarnman">
+                                <input type="password" name="pwd" class="ix_register_input" placeholder="Lösenord">
+                                <button type="submit" name="register_submit_b" class="ix_register_button">Registrera</button>
+                            </form>
+                            <i class="far fa-arrow-alt-circle-left"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
 		</body>

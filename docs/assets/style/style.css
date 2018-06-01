@@ -21,7 +21,7 @@ body {
 }
 
 .ix_start_hold {
-    display: none;
+    /* display: none; */
 }
 
 .ix_name_ctr {
@@ -62,22 +62,67 @@ body {
 }
 
 .ix_login_hold {
-    /* display: none; */
+    display: none;
 }
 
-.ix_login_name_ctr {
-    margin: 25px 0px;
+.ix_login_input,
+.ix_login_button {
+    font-size: 18px;
+    padding: 5px;
+    background-color: #00000059;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+.ix_register_hold {
+    display: none;
+}
+
+.ix_register_form_ctr {
     display: grid;
-    justify-content: center;
+    justify-items: center;
 }
 
-.ix_login_name {
-    margin: 0;
-    font-size: 48px;
-    font-style: italic;
-    font-weight: 700;
+.ix_register_form {
+    display: grid;
+    /* justify-content: center; */
+    justify-items: center;
+    align-content: center;
 }
 
-.ix_login_input {
-    
+.ix_register_input,
+.ix_register_button {
+    margin: 10px 0px;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #00000059;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+.ix_register_input {
+    width: 300px;
+}
+
+.ix_register_input::placeholder {
+    color: #bbbbbb;
+    /* color: #ffa500; */
+}
+
+.ix_register_button {
+    width: 150px;
+    cursor: pointer;
+}
+
+.ix_register_button:hover {
+    background-color: #000000;
+}
+
+i.fa-arrow-alt-circle-left {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+i.fa-arrow-alt-circle-left:hover {
+    color: #ffffff;
 }
