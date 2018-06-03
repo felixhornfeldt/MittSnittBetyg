@@ -22,6 +22,7 @@ body {
 
 .ix_start_hold {
     /* display: none; */
+    height: 60px;
 }
 
 .ix_name_ctr {
@@ -74,24 +75,32 @@ body {
     border-color: #000000;
 }
 
-.ix_register_hold {
+.ix_login_button {
+    cursor: pointer;
+}
+
+.ix_login_button:hover {
+    background-color: #000000;
+}
+
+.ix_signup_hold {
     display: none;
 }
 
-.ix_register_form_ctr {
+.ix_signup_form_ctr {
     display: grid;
     justify-items: center;
 }
 
-.ix_register_form {
+.ix_signup_form {
     display: grid;
     /* justify-content: center; */
     justify-items: center;
     align-content: center;
 }
 
-.ix_register_input,
-.ix_register_button {
+.ix_signup_input,
+.ix_signup_button {
     margin: 10px 0px;
     font-size: 18px;
     padding: 5px;
@@ -100,21 +109,21 @@ body {
     border-color: #000000;
 }
 
-.ix_register_input {
+.ix_signup_input {
     width: 300px;
 }
 
-.ix_register_input::placeholder {
+.ix_signup_input::placeholder {
     color: #bbbbbb;
     /* color: #ffa500; */
 }
 
-.ix_register_button {
+.ix_signup_button {
     width: 150px;
     cursor: pointer;
 }
 
-.ix_register_button:hover {
+.ix_signup_button:hover {
     background-color: #000000;
 }
 

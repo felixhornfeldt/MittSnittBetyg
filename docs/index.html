@@ -36,32 +36,32 @@
                             <div class="ix_form_button_ctr" id="ix_form_button_login_ctr">
                                 <button class="ix_form_button" id="ix_form_button_login">Logga in</button>
                             </div>
-                            <div class="ix_form_button_ctr" id="ix_form_button_register_ctr">
-                                <button class="ix_form_button" id="ix_form_button_register">Registrera</button>
+                            <div class="ix_form_button_ctr" id="ix_form_button_signup_ctr">
+                                <button class="ix_form_button" id="ix_form_button_signup">Registrera</button>
                             </div>
                         </div>
                     </div>
                     <div class="ix_login_hold">
                         <div class="ix_login_form_ctr">
-                            <form action="./" method="post" class="ix_login_form">
-                                <input type="text" name="uid" class="ix_login_input">
-                                <input type="password" name="pwd" class="ix_login_input">
+                            <form action="./assets/actions/ix_act_login.php" method="post" class="ix_login_form">
+                                <input type="text" name="uid" class="ix_login_input" placeholder="Användarnman">
+                                <input type="password" name="pwd" class="ix_login_input" placeholder="Lösenord">
                                 <button type="submit" name="login_submit_b" class="ix_login_button">Logga in</button>
                             </form>
                             <i class="far fa-arrow-alt-circle-left ix_login_back_b"></i>
                         </div>
                     </div>
-                    <div class="ix_register_hold">
-                        <div class="ix_register_form_ctr">
-                            <form action="./" method="post" class="ix_register_form">
-                                <input type="text" name="firstname" class="ix_register_input" placeholder="Förnamn">
-                                <input type="text" name="lastname" class="ix_register_input" placeholder="Efternamn">
-                                <input type="email" name="mail" class="ix_register_input" placeholder="Email">
-                                <input type="text" name="uid" class="ix_register_input" placeholder="Användarnman">
-                                <input type="password" name="pwd" class="ix_register_input" placeholder="Lösenord">
-                                <button type="submit" name="register_submit_b" class="ix_register_button">Registrera</button>
+                    <div class="ix_signup_hold">
+                        <div class="ix_signup_form_ctr">
+                            <form action="./assets/actions/ix_act_signup.php" method="post" class="ix_signup_form">
+                                <input type="text" name="firstname" class="ix_signup_input" placeholder="Förnamn">
+                                <input type="text" name="lastname" class="ix_signup_input" placeholder="Efternamn">
+                                <input type="email" name="mail" class="ix_signup_input" placeholder="Email">
+                                <input type="text" name="uid" class="ix_signup_input" placeholder="Användarnman">
+                                <input type="password" name="pwd" class="ix_signup_input" placeholder="Lösenord">
+                                <button type="submit" name="signup_submit_b" class="ix_signup_button">Registrera</button>
                             </form>
-                            <i class="far fa-arrow-alt-circle-left ix_register_back_b"></i>
+                            <i class="far fa-arrow-alt-circle-left ix_signup_back_b"></i>
                         </div>
                     </div>
                 </div>
