@@ -36,6 +36,7 @@ if (isset($_POST["signup_submit_b"])) {
                         $hashedPwd = password_hash($password, PASSWORD_BCRYPT);
                         $sqlInsert = "INSERT INTO users (user_firstname, user_lastname, user_mail, user_username, user_password) VALUES ('$firstname', '$lastname', '$mail', '$username', '$hashedPwd')";
                         mysqli_query($conn, $sqlInsert);
+                        // $_SESSION['user'] = [$username];
                         header("Location: ./../../index.html?signup=sucess");
                         exit();
                     }

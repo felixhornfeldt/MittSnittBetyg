@@ -19,15 +19,16 @@ if (isset($_POST["login_submit_b"])) {
             $result = mysqli_query($conn, $sql);
             $resultCheck = mysqli_num_rows($result);
             if ($resultCheck < 1) {
-                header("Location: ./../../index.html?login=errorresultcheck");
+                header("Location: ./../../index.html?login=error");
                 exit();
             } else {
                 if ($row = mysqli_fetch_assoc($result)) {
                     $hashedPwdCheck = password_verify($password, $row['user_password']);
                     if ($hashedPwdCheck === false) {
-                        header("Location: ./../../index.html?login=errorpwdcheck");
+                        header("Location: ./../../index.html?login=error");
                         exit();
                     } elseif ($hashedPwdCheck === true) {
+                        // $_SESSION['user'] = [$username];
                         header("Location: ./../../index.html?login=sucess");
                         exit();
                     } else {

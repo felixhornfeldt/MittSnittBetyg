@@ -75,6 +75,11 @@ body {
     border-color: #000000;
 }
 
+.ix_login_input::placeholder {
+    color: #bbbbbb;
+    /* color: #ffa500; */
+}
+
 .ix_login_button {
     cursor: pointer;
 }
@@ -94,7 +99,6 @@ body {
 
 .ix_signup_form {
     display: grid;
-    /* justify-content: center; */
     justify-items: center;
     align-content: center;
 }
@@ -115,7 +119,6 @@ body {
 
 .ix_signup_input::placeholder {
     color: #bbbbbb;
-    /* color: #ffa500; */
 }
 
 .ix_signup_button {
