@@ -21,7 +21,7 @@ body {
 }
 
 .ix_start_hold {
-    /* display: none; */
+    display: none;
     height: 60px;
 }
 
@@ -63,7 +63,13 @@ body {
 }
 
 .ix_login_hold {
-    display: none;
+    /* display: none; */
+    height: 60px;
+}
+
+.ix_login_form_ctr {
+    display: flex;
+    align-items: center;
 }
 
 .ix_login_input,
@@ -77,7 +83,6 @@ body {
 
 .ix_login_input::placeholder {
     color: #bbbbbb;
-    /* color: #ffa500; */
 }
 
 .ix_login_button {
@@ -86,6 +91,10 @@ body {
 
 .ix_login_button:hover {
     background-color: #000000;
+}
+
+.ix_login_back_b {
+    margin-right: 5px;
 }
 
 .ix_signup_hold {
