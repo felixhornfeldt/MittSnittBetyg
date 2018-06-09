@@ -1,6 +1,6 @@
 <?php
 
-include_once './../database/dbh_conn.php';
+include_once './dbh_conn.php';
 
 if (isset($_POST["login_submit_b"])) {
 
