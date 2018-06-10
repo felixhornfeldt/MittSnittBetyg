@@ -4,14 +4,14 @@ include_once './dbh_conn.php';
 
 if (isset($_POST["login_submit_b"])) {
 
-    $username = mysqli_real_escape_string($conn, $_POST["uid"]);
+    $username = strtolower(mysqli_real_escape_string($conn, $_POST["uid"]));
     $password = mysqli_real_escape_string($conn, $_POST["pwd"]);
 
     if (empty($username) || empty($password)) {
         header("Location: ./../../index.html?input=empty");
         exit();
     } else {
-        if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
+        if (!preg_match("/^[a-z0-9]*$/", $username)) {
             header("Location: ./../../index.html?username=invalid");
             exit();
         } else {

@@ -1,8 +1,8 @@
 // function for displaying and not displaying different elements
 function a() {
-    var startHold = document.querySelector(".ix_start_hold");
-    var loginHold = document.querySelector(".ix_login_hold");
-    var signupHold = document.querySelector(".ix_signup_hold");
+    const startHold = document.querySelector(".ix_start_hold");
+    const loginHold = document.querySelector(".ix_login_hold");
+    const signupHold = document.querySelector(".ix_signup_hold");
     $("#ix_form_button_login").click(function() {
         $(startHold).fadeToggle(1000, function() {
             $(loginHold).fadeToggle(1000, function(){});
