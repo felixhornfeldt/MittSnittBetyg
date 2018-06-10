@@ -29,7 +29,8 @@ if (isset($_POST["login_submit_b"])) {
                         exit();
                     } elseif ($hashedPwdCheck === true) {
                         // $_SESSION['user'] = [$username];
-                        header("Location: ./../../index.html?login=sucess");
+                        // header("Location: ./../../index.html?login=sucess");
+                        header("Location: ./../../user.html");
                         exit();
                     } else {
                         header("Location: ./../../index.html?error");

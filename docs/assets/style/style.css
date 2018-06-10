@@ -20,11 +20,6 @@ body {
     justify-content: center;
 }
 
-.ix_start_hold {
-    display: none;
-    height: 60px;
-}
-
 .ix_name_ctr {
     margin: 25px 0px;
     display: grid;
@@ -36,6 +31,11 @@ body {
     font-size: 48px;
     font-style: italic;
     font-weight: 700;
+}
+
+.ix_start_hold {
+    display: none;
+    height: 60px;
 }
 
 .ix_form_buttons {
@@ -146,4 +146,33 @@ i.fa-arrow-alt-circle-left {
 
 i.fa-arrow-alt-circle-left:hover {
     color: #ffffff;
+}
+
+/* USER PROPERTIES */
+
+.u_ctr {
+    width: 100%;
+    min-height: inherit;
+    background-color: #ff0000;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_spin_ctr {
+    display: none;
+}
+
+@keyframes spinmove {
+    100%{transform: rotate(360deg);}
+}
+
+i.fa-circle-notch {
+    font-size: 48px;
+    color: #f1f1f1;
+    animation: spinmove 1500ms linear infinite;
+}
+
+.u_content_ctr {
+    display: none;
 }
