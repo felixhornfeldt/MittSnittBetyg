@@ -1,7 +1,7 @@
 body {
     margin: 0;
     /* background-color: #ffa500; */
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     overflow: auto;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .ix_start_hold {
-    display: none;
+    /* display: none; */
     height: 60px;
 }
 
@@ -63,7 +63,7 @@ body {
 }
 
 .ix_login_hold {
-    /* display: none; */
+    display: none;
     height: 60px;
 }
 
@@ -175,4 +175,35 @@ i.fa-circle-notch {
 
 .u_content_ctr {
     display: none;
+}
+
+.u_content_box {
+    display: grid;
+    width: 100%;
+    min-height: inherit;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_grade_ctr {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    width: 800px;
+    /* min-height: 500px; */
+    margin: 5vh 0vh;
+}
+
+.u_grade_content_ctr {
+    min-height: 500px;
+    width: 100%;
+}
+
+.u_conclusion_ctr {
+    height: 50px;
+    /* background-color: #00008b; */
+    /* background-color: #ffa500; */
+    background-color: #a9a9a9;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }

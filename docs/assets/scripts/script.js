@@ -36,7 +36,7 @@ function b() {
         setTimeout(c, spinTime);
         function c() {
             $(".u_spin_ctr").fadeToggle(delay500, function() {
-                $(".u_content_ctr").fadeToggle(delay500, function(){});
+                $(".u_content_ctr").fadeToggle(1250, function(){});
             });
         }
     }
