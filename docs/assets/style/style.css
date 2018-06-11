@@ -189,20 +189,57 @@ i.fa-circle-notch {
     background-color: #f1f1f1;
     border-radius: 15px;
     width: 800px;
-    /* min-height: 500px; */
     margin: 5vh 0vh;
 }
 
 .u_grade_content_ctr {
-    min-height: 500px;
     width: 100%;
+}
+
+.u_grade_box {
+    height: 50px;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    /* background: linear-gradient(#000000, #ffa500); */
+    border-bottom: 1px solid #555555;
+}
+
+.u_grade_name_ctr,
+.u_grade_grade_ctr,
+.u_grade_value_ctr {
+    grid-row: 1 / 2;
+    display: grid;
+    align-content: center;
+}
+
+.u_grade_name_ctr {
+    grid-column: 1 / 5;
+}
+
+.u_grade_grade_ctr,
+.u_grade_value_ctr {
+    grid-column: span 1;
+    justify-content: center;
+}
+
+.u_grade_parg {
+    margin: 0;
+    font-size: 20px;
+    color: #555555;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.u_grade_name_ctr .u_grade_parg {
+    margin-left: 25px;
 }
 
 .u_conclusion_ctr {
     height: 50px;
-    /* background-color: #00008b; */
-    /* background-color: #ffa500; */
-    background-color: #a9a9a9;
+    background: linear-gradient(#555555, rgba(153, 153, 153, 0.85));
     width: 100%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
