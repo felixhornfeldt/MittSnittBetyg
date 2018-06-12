@@ -248,6 +248,39 @@ i.fa-circle-notch {
     background-color: #cccccc;
 }
 
+.u_manage_content_ctr {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    /* background-color: #000000; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.u_manage_edit_ctr,
+.u_manage_delete_ctr {
+    grid-row: 1 / 2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_manage_edit_ctr {
+    grid-column: 4 / 5;
+}
+
+.u_manage_delete_ctr {
+    grid-column: 5 / 6;
+}
+
+i.u_manage_edit,
+i.u_manage_delete {
+    margin: 0;
+    color: #555555;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .u_conclusion_ctr {
     height: 50px;
     /* background-color: #000000; */

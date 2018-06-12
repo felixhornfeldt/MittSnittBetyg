@@ -5,3 +5,5 @@ _**MittSnittBetyg** är en hemsida som beräknar och håller ihop dina betyg och
 SESSION håller id, firstname, lastname, mail, username, password
 
 transform username to lowercase 
+
+#495057
