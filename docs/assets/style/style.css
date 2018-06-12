@@ -153,7 +153,7 @@ i.fa-arrow-alt-circle-left:hover {
 .u_ctr {
     width: 100%;
     min-height: inherit;
-    background-color: #ff0000;
+    background-color: #0000ff;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -199,7 +199,6 @@ i.fa-circle-notch {
 .u_grade_box {
     min-height: 50px;
     width: 100%;
-    /* background: linear-gradient(#000000, #ffa500); */
 }
 
 .u_grade_hold_ctr {

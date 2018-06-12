@@ -1,5 +1,5 @@
 // function for displaying and not displaying different elements
-function a() {
+function homeDisplayToggle() {
     const startHold = document.querySelector(".ix_start_hold");
     const loginHold = document.querySelector(".ix_login_hold");
     const signupHold = document.querySelector(".ix_signup_hold");
@@ -26,15 +26,13 @@ function a() {
 }
 
 // function for user spin transforming to user content
-function b() {
+function spinTransform() {
     if (document.querySelectorAll(".u_ctr").length > 0) {
         const delay500 = 500;
-        // function for displaying spinner
         setTimeout($(".u_spin_ctr").fadeToggle(delay500, function(){}), delay500);
-        // function for displaying user content
         const spinTime = Math.floor(Math.random() * (4000 - 1500 + 1) + 1500);
-        setTimeout(c, spinTime);
-        function c() {
+        setTimeout(displayUserContent, spinTime);
+        function displayUserContent() {
             $(".u_spin_ctr").fadeToggle(delay500, function() {
                 $(".u_content_ctr").fadeToggle(1250, function(){});
             });
@@ -62,7 +60,7 @@ function slideManageGradeCtr() {
 }
 
 $(function() {
-    a();
-    b();
+    homeDisplayToggle();
+    spinTransform();
     slideManageGradeCtr();
 })
