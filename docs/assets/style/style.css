@@ -197,14 +197,20 @@ i.fa-circle-notch {
 }
 
 .u_grade_box {
+    min-height: 50px;
+    width: 100%;
+    /* background: linear-gradient(#000000, #ffa500); */
+}
+
+.u_grade_hold_ctr {
     height: 50px;
     width: 100%;
     display: grid;
     align-content: center;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr;
-    /* background: linear-gradient(#000000, #ffa500); */
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
 }
 
 .u_grade_name_ctr,
@@ -237,9 +243,15 @@ i.fa-circle-notch {
     margin-left: 25px;
 }
 
+.u_grade_manage_ctr {
+    display: none;
+    height: 40px;
+    background-color: #cccccc;
+}
+
 .u_conclusion_ctr {
     height: 50px;
-    background: linear-gradient(#555555, rgba(153, 153, 153, 0.85));
+    /* background-color: #000000; */
     width: 100%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;

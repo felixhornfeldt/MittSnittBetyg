@@ -42,7 +42,27 @@ function b() {
     }
 }
 
+function slideManageGradeCtr() {
+    $(".u_grade_hold_ctr").click(function(){
+        let manageCtrId = $(this).attr("data-grade-id");
+        if (document.querySelectorAll(".slide_down").length > 0) {
+            let ctrSlideDownId = $(".slide_down").attr("id");
+            slideCtr(ctrSlideDownId);
+            if (ctrSlideDownId !== manageCtrId) {
+                slideCtr(manageCtrId);
+            } 
+        } else {
+            slideCtr(manageCtrId);
+        }
+        function slideCtr(ctrId) {
+            $("#"+ctrId+"").slideToggle(750, function(){});
+            $("#"+ctrId+"").toggleClass("slide_down");
+        }
+    });
+}
+
 $(function() {
     a();
     b();
+    slideManageGradeCtr();
 })
