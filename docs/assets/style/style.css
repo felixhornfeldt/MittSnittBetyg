@@ -174,7 +174,7 @@ i.fa-circle-notch {
 }
 
 .u_content_ctr {
-    display: none;
+    /* display: none; */
 }
 
 .u_content_box {
@@ -199,6 +199,7 @@ i.fa-circle-notch {
 .u_grade_box {
     min-height: 50px;
     width: 100%;
+    font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 .u_grade_hold_ctr {
@@ -234,7 +235,6 @@ i.fa-circle-notch {
     margin: 0;
     font-size: 20px;
     color: #555555;
-    font-family: "Roboto", "Open Sans", sans-serif;
     font-weight: 300;
 }
 
@@ -243,7 +243,7 @@ i.fa-circle-notch {
 }
 
 .u_grade_manage_ctr {
-    display: none;
+    /* display: none; */
     height: 40px;
     background-color: #cccccc;
 }
@@ -253,7 +253,7 @@ i.fa-circle-notch {
     width: 100%;
     height: 100%;
     /* background-color: #000000; */
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
 }
 
@@ -270,15 +270,71 @@ i.fa-circle-notch {
 }
 
 .u_manage_delete_ctr {
-    grid-column: 5 / 6;
+    grid-column: 6 / 7;
 }
 
 i.u_manage_edit,
 i.u_manage_delete {
     margin: 0;
     color: #555555;
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
+}
+
+.u_manage_delete_form_ctr {
+    display: none;
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+}
+
+.u_manage_delete_form_box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.u_manage_delete_form {
+    grid-column: span 1;
+    grid-row: span 1;
+    /* background-color: #fff; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.u_manage_delete_form_message_ctr {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    /* background-color: green; */
+    display: grid;
+    align-content: center;
+}
+
+.u_manage_delete_form_message {
+    font-size: 16px;
+    cursor: text;
+    margin: 0;
+    color: #555555;
+}
+
+.u_manage_delete_form_button_ctr {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    /* background-color: gold; */
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_manage_delete_form_button {
+    border: 0;
+    background-color: #008000;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 15px;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .u_conclusion_ctr {

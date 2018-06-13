@@ -55,7 +55,20 @@
                                                     <i class="far fa-edit u_manage_edit"></i>
                                                 </div>
                                                 <div class="u_manage_delete_ctr">
-                                                    <i class="fas fa-trash-alt u_manage_delete"></i>
+                                                    <i class="fas fa-trash-alt u_manage_delete" data-delete-id="fys_1_del"></i>
+                                                </div>
+                                                <div class="u_manage_delete_form_ctr" id="fys_1_del">
+                                                    <div class="u_manage_delete_form_box">
+                                                        <form action="./assets/php/" method="post" class="u_manage_delete_form">
+                                                            <input type="text" style="display: none" name="fys_1">
+                                                            <div class="u_manage_delete_form_message_ctr">
+                                                                <p class="u_manage_delete_form_message">Är du säker?</p>
+                                                            </div>
+                                                            <div class="u_manage_delete_form_button_ctr">
+                                                                <button type="submit" class="u_manage_delete_form_button" name="delete_submit">Ja</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
