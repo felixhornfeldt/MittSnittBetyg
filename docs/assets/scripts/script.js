@@ -3,7 +3,7 @@ function homeDisplayToggle() {
     const startHold = document.querySelector(".ix_start_hold");
     const loginHold = document.querySelector(".ix_login_hold");
     const signupHold = document.querySelector(".ix_signup_hold");
-    $("#ix_form_button_login").click(function() {
+    $("#ix_form_btn_login").click(function() {
         $(startHold).fadeToggle(1000, function() {
             $(loginHold).fadeToggle(1000, function(){});
         });
@@ -13,7 +13,7 @@ function homeDisplayToggle() {
             $(startHold).fadeToggle(1000, function(){});
         });
     });
-    $("#ix_form_button_signup").click(function() {
+    $("#ix_form_btn_signup").click(function() {
         $(startHold).slideToggle(1000, function() {
             $(signupHold).slideToggle(1500, function(){});
         });
@@ -63,8 +63,22 @@ function displayDeleteForm() {
     $("i.u_manage_delete").click(function(){
         let deleteFormId = $(this).attr("data-delete-id");
         let deleteFormCtr = document.querySelector("#"+deleteFormId+"");
-        console.log(deleteFormCtr);
-        $(deleteFormCtr).fadeIn(750, function(){});
+        $(deleteFormCtr).fadeIn(750, function(){
+            $(deleteFormCtr).toggleClass("show_delete_form");
+        });
+    });
+    $(document).click(function(){
+        if (document.querySelectorAll(".show_delete_form").length > 0) {
+            $(".show_delete_form").fadeToggle(750, function(){});
+            $(".show_delete_form").toggleClass("show_delete_form");
+        }
+    });
+}
+
+function displayNewGradeForm() {
+    $(".u_new_grade_btn").click(function(){
+        let newGradeFormBox = document.querySelector(".u_new_grade_form_box");
+        $(newGradeFormBox).slideToggle(1500, function(){});
     });
 }
 
@@ -73,4 +87,5 @@ $(function() {
     spinTransform();
     slideManageGradeCtr();
     displayDeleteForm();
+    displayNewGradeForm();
 })

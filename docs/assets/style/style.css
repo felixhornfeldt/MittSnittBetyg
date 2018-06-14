@@ -38,18 +38,18 @@ body {
     height: 60px;
 }
 
-.ix_form_buttons {
+.ix_form_btns {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.ix_form_button_ctr {
+.ix_form_btn_ctr {
     margin: 0px 25px;
 }
 
-.ix_form_button {
+.ix_form_btn {
     font-size: 24px;
     background-color: #00000059;
     border: 0;
@@ -58,7 +58,7 @@ body {
     cursor: pointer;
 }
 
-.ix_form_button:hover {
+.ix_form_btn:hover {
     background-color: #000000;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .ix_login_input,
-.ix_login_button {
+.ix_login_btn {
     font-size: 18px;
     padding: 5px;
     background-color: #00000059;
@@ -85,11 +85,11 @@ body {
     color: #bbbbbb;
 }
 
-.ix_login_button {
+.ix_login_btn {
     cursor: pointer;
 }
 
-.ix_login_button:hover {
+.ix_login_btn:hover {
     background-color: #000000;
 }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .ix_signup_input,
-.ix_signup_button {
+.ix_signup_btn {
     margin: 10px 0px;
     font-size: 18px;
     padding: 5px;
@@ -130,12 +130,12 @@ body {
     color: #bbbbbb;
 }
 
-.ix_signup_button {
+.ix_signup_btn {
     width: 150px;
     cursor: pointer;
 }
 
-.ix_signup_button:hover {
+.ix_signup_btn:hover {
     background-color: #000000;
 }
 
@@ -185,11 +185,119 @@ i.fa-circle-notch {
     justify-content: center;
 }
 
+/* USER NEW GRADE PROPERTIES */
+
+.u_new_grade_form_ctr {
+    width: 250px;
+    min-height: 50px;
+    display: grid;
+    /* justify-self: center; */
+    margin: 2.5vh 0vh;
+}
+
+.u_new_grade_btn_ctr {
+    height: 50px;
+    width: 100px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.u_new_grade_btn {
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    border: 0; 
+    font-weight: 500;
+    font-size: 24px;
+    color: #555555;
+    cursor: pointer;
+    outline: none;
+}
+
+i.fa-plus {
+    font-size: 20px;
+}
+
+.u_new_grade_form_box {
+    display: none;
+}
+
+.u_new_grade_form {
+    width: 100%;
+    height: 250px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin-top: 2.5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.u_new_grade_form_course_name_ctr,
+.u_new_grade_form_letter_ctr,
+.u_new_grade_form_course_value_ctr {
+    grid-column: 1 / 2;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_new_grade_form_course_name_ctr {
+    grid-row: 1 / 2;
+}
+
+.u_new_grade_form_course_value_ctr {
+    grid-row: 2 / 3;
+}
+
+.u_new_grade_form_letter_ctr {
+    grid-row: 3 / 4;
+}
+
+.u_new_grade_label_for_input {
+    text-align: left;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    color: #555555;
+    width: 75%;
+}
+
+.u_new_grade_form_input {
+    border: 1px solid #555555;
+    color: #555555;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: text;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.u_new_grade_form_submit_btn_ctr {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_new_grade_form_submit_btn {
+    border: 0;
+    background-color: #1bc21b;
+    font-size: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+/* USER GRADES PROPERTIES */
+
 .u_grade_ctr {
     background-color: #f1f1f1;
     border-radius: 15px;
     width: 800px;
-    margin: 5vh 0vh;
+    margin: 2.5vh 0vh;
 }
 
 .u_grade_content_ctr {
@@ -243,7 +351,7 @@ i.fa-circle-notch {
 }
 
 .u_grade_manage_ctr {
-    /* display: none; */
+    display: none;
     height: 40px;
     background-color: #cccccc;
 }
@@ -252,7 +360,6 @@ i.fa-circle-notch {
     display: grid;
     width: 100%;
     height: 100%;
-    /* background-color: #000000; */
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
 }
@@ -297,7 +404,6 @@ i.u_manage_delete {
 .u_manage_delete_form {
     grid-column: span 1;
     grid-row: span 1;
-    /* background-color: #fff; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -306,7 +412,6 @@ i.u_manage_delete {
 .u_manage_delete_form_message_ctr {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    /* background-color: green; */
     display: grid;
     align-content: center;
 }
@@ -318,23 +423,24 @@ i.u_manage_delete {
     color: #555555;
 }
 
-.u_manage_delete_form_button_ctr {
+.u_manage_delete_form_btn_ctr {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    /* background-color: gold; */
     display: grid;
     align-content: center;
     justify-content: center;
 }
 
-.u_manage_delete_form_button {
+.u_manage_delete_form_btn {
     border: 0;
-    background-color: #008000;
+    /* background-color: #1bc21b; */
+    background-color: #ff0000;
     font-size: 16px;
     cursor: pointer;
     padding: 5px 15px;
     color: #ffffff;
     border-radius: 5px;
+    font-family: "Roboto", "Open Sans", sans-serif;
 }
 
 .u_conclusion_ctr {
