@@ -6,5 +6,5 @@ user_id: int 11
 g_course_name: varchar 256
 g_course_grade: varchar 256
 g_course_value: int 11
-g_course_unique_id: int 11, mt_rand(), start with 0
-g_course_delete_id: int 11, mt_rand(), start with 1
+g_course_unique_id: int 11, mt_rand()
+g_course_delete_id: int 11, mt_rand()
