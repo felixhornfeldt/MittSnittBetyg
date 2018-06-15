@@ -61,18 +61,25 @@ function slideManageGradeCtr() {
 
 function displayDeleteForm() {
     $("i.u_manage_delete").click(function(){
-        let deleteFormId = $(this).attr("data-delete-id");
-        let deleteFormCtr = document.querySelector("#"+deleteFormId+"");
-        $(deleteFormCtr).fadeIn(750, function(){
-            $(deleteFormCtr).toggleClass("show_delete_form");
-        });
+        let deleteFormId = "#"+$(this).attr("data-delete-id")+"";
+        fadeDeleteForm(true, deleteFormId);
     });
     $(document).click(function(){
         if (document.querySelectorAll(".show_delete_form").length > 0) {
-            $(".show_delete_form").fadeToggle(750, function(){});
-            $(".show_delete_form").toggleClass("show_delete_form");
+            fadeDeleteForm(false, ".show_delete_form");
         }
     });
+    function fadeDeleteForm(boo, id) {
+        if (boo) {
+            $(id).fadeIn(750, function(){
+                $(id).toggleClass("show_delete_form");
+            });
+        } else {
+            $(id).fadeOut(750, function(){
+                $(id).toggleClass("show_delete_form");
+            });
+        }
+    }
 }
 
 function displayNewGradeForm() {

@@ -49,14 +49,12 @@ if (!isset($_POST["btn_submit"])) {
                                 $newIdRun = false;
                             }
                         }
-                        $hashedCourseGrade = password_hash($courseGrade, PASSWORD_BCRYPT);
-                        $sqlInsert = "INSERT INTO grades (user_id, g_course_name, g_course_grade, g_course_value, g_course_unique_id, g_course_delete_id) VALUES ($_SESSION[user_id], '$courseName', '$hashedCourseGrade', $courseValue, $courseUniqueId, $courseDeleteId)";
+                        $sqlInsert = "INSERT INTO grades (user_id, g_course_name, g_course_grade, g_course_value, g_course_unique_id, g_course_delete_id) VALUES ($_SESSION[user_id], '$courseName', '$courseGrade', $courseValue, $courseUniqueId, $courseDeleteId)";
                         mysqli_query($conn, $sqlInsert);
                         header("Location: ./../../user.php?gradeaddsucess=".mt_rand()."");
                         exit();
                     } else {
-                        $hashedCourseGrade = password_hash($courseGrade, PASSWORD_BCRYPT);
-                        $sqlInsert = "INSERT INTO grades (user_id, g_course_name, g_course_grade, g_course_value, g_course_unique_id, g_course_delete_id) VALUES ($_SESSION[user_id], '$courseName', '$hashedCourseGrade', $courseValue, $courseUniqueId, $courseDeleteId)";
+                        $sqlInsert = "INSERT INTO grades (user_id, g_course_name, g_course_grade, g_course_value, g_course_unique_id, g_course_delete_id) VALUES ($_SESSION[user_id], '$courseName', '$courseGrade', $courseValue, $courseUniqueId, $courseDeleteId)";
                         mysqli_query($conn, $sqlInsert);
                         header("Location: ./../../user.php?gradeaddsucess=".mt_rand()."");
                         exit();
