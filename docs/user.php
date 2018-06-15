@@ -1,3 +1,11 @@
+<?php 
+session_start();
+if (!isset($_SESSION['user_id'])){
+    header("Location: ./index.php?pleaseloginorsignup=".mt_rand()."");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
@@ -33,7 +41,7 @@
                     <div class="u_content_ctr">
                         <div class="u_content_box">
                             <div style="text-align: center;">
-                                <a href="./index.html">Index page dev mode</a>
+                                <a href="./index.php">Index page dev mode</a>
                             </div>
                             <div class="u_new_grade_form_ctr">
                                 <div class="u_new_grade_btn_ctr">
@@ -83,7 +91,7 @@
                                                 </div>
                                                 <div class="u_manage_delete_form_ctr" id="fys_1_del">
                                                     <div class="u_manage_delete_form_box">
-                                                        <form action="./user.html" method="post" class="u_manage_delete_form">
+                                                        <form action="./user.php" method="post" class="u_manage_delete_form">
                                                             <input type="text" style="display: none" name="fys_1">
                                                             <div class="u_manage_delete_form_message_ctr">
                                                                 <p class="u_manage_delete_form_message">Är du säker?</p>

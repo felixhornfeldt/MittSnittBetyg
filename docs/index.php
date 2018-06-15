@@ -1,3 +1,5 @@
+<?php session_start();session_destroy();?>
+
 <!DOCTYPE html>
 	<html lang="en">
 		<head>
@@ -28,7 +30,7 @@
             <div class="ctr">
                 <div class="ix_home">
                     <div style="text-align: center;">
-                        <a href="./user.html">User page dev mode</a>
+                        <a href="./user.php">User page dev mode</a>
                     </div>
                     <div class="ix_name_ctr">
                         <h1 class="ix_name">MittSnittBetyg</h1>
