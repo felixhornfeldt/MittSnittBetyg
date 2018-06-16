@@ -27,17 +27,17 @@ function homeDisplayToggle() {
 
 // function for user spin transforming to user content
 function spinTransform() {
-    if (document.querySelectorAll(".u_ctr").length > 0) {
-        const delay500 = 500;
-        setTimeout($(".u_spin_ctr").fadeToggle(delay500, function(){}), delay500);
-        const spinTime = Math.floor(Math.random() * (4000 - 1500 + 1) + 1500);
-        setTimeout(displayUserContent, spinTime);
-        function displayUserContent() {
-            $(".u_spin_ctr").fadeToggle(delay500, function() {
-                $(".u_content_ctr").fadeToggle(1250, function(){});
-            });
-        }
-    }
+    // if (document.querySelectorAll(".u_ctr").length > 0) {
+    //     const delay500 = 500;
+    //     setTimeout($(".u_spin_ctr").fadeToggle(delay500, function(){}), delay500);
+    //     const spinTime = Math.floor(Math.random() * (4000 - 1500 + 1) + 1500);
+    //     setTimeout(displayUserContent, spinTime);
+    //     function displayUserContent() {
+    //         $(".u_spin_ctr").fadeToggle(delay500, function() {
+    //             $(".u_content_ctr").fadeToggle(1250, function(){});
+    //         });
+    //     }
+    // }
 }
 
 function slideManageGradeCtr() {

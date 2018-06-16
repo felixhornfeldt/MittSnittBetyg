@@ -48,7 +48,7 @@
                                     <button class="u_new_grade_btn">Ny <i class="fas fa-plus"></i></button>
                                 </div>
                                 <div class="u_new_grade_form_box">
-                                    <form action="./assets/php/g_act_upload.php" method="post" class="u_new_grade_form">
+                                    <form action="./assets/php/actions/act_g_upload.php" method="post" class="u_new_grade_form">
                                         <div class="u_new_grade_form_course_name_ctr">
                                             <label for="course_name" class="u_new_grade_label_for_input">Kursnamn</label>
                                             <input type="text" name="course_name" class="u_new_grade_form_input" id="course_name">
@@ -70,10 +70,14 @@
                             <div class="u_grade_ctr">
                                 <div class="u_grade_content_ctr">
                                     <?php
-                                        include_once './assets/php/u_grade_box_maker.php';
+                                        include_once './assets/php/includes/u_grade_box_maker.php';
                                     ?>
                                 </div>
-                                <div class="u_conclusion_ctr"></div>
+                                <div class="u_conclusion_ctr">
+                                    <?php
+                                        include_once './assets/php/includes/u_conclusion_maker.php';
+                                    ?>
+                                </div>
                             </div>
                         </div>
                     </div>

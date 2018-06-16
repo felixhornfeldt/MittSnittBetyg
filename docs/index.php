@@ -48,7 +48,7 @@
                     <div class="ix_login_hold">
                         <div class="ix_login_form_ctr">
                             <i class="far fa-arrow-alt-circle-left ix_login_back_b"></i>
-                            <form action="./assets/php/ix_act_login.php" method="post" class="ix_login_form">
+                            <form action="./assets/php/actions/act_ix_login.php" method="post" class="ix_login_form">
                                 <input type="text" name="uid" class="ix_login_input" placeholder="Användarnman">
                                 <input type="password" name="pwd" class="ix_login_input" placeholder="Lösenord">
                                 <button type="submit" name="login_submit_b" class="ix_login_btn">Logga in</button>
@@ -57,7 +57,7 @@
                     </div>
                     <div class="ix_signup_hold">
                         <div class="ix_signup_form_ctr">
-                            <form action="./assets/php/ix_act_signup.php" method="post" class="ix_signup_form">
+                            <form action="./assets/php/actions/act_ix_signup.php" method="post" class="ix_signup_form">
                                 <input type="text" name="firstname" class="ix_signup_input" placeholder="Förnamn">
                                 <input type="text" name="lastname" class="ix_signup_input" placeholder="Efternamn">
                                 <input type="email" name="mail" class="ix_signup_input" placeholder="Email">
