@@ -40,9 +40,26 @@
                     </div>
                     <div class="u_content_ctr">
                         <div class="u_content_box">
-                            <div style="text-align: center;">
+                            <header>
+                                <div class="u_header_ctr">
+                                    <div class="u_header_home_ctr">
+                                        <a href="./user.php" class="u_header_home_link">
+                                            <div class="u_header_home_content_ctr">
+                                                <i class="fas fa-home"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="u_header_profile_ctr">
+                                        <div class="u_header_profile_content_ctr">
+                                            <!-- <i class="fas fa-user-astronaut"></i> -->
+                                            <i class="far fa-user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <!-- <div style="text-align: center;">
                                 <a href="./index.php">Index page dev mode</a>
-                            </div>
+                            </div> -->
                             <div class="u_new_grade_form_ctr">
                                 <div class="u_new_grade_btn_ctr">
                                     <button class="u_new_grade_btn">Ny <i class="fas fa-plus"></i></button>
