@@ -50,11 +50,12 @@
                                         </a>
                                     </div>
                                     <div class="u_header_profile_ctr">
-                                        <div class="u_header_profile_content_ctr">
+                                        <div class="u_header_profile_logo_ctr">
                                             <!-- <i class="fas fa-user-astronaut"></i> -->
                                             <i class="far fa-user"></i>
                                         </div>
                                     </div>
+                                    <div class="u_header_profile_content_ctr"></div>
                                 </div>
                             </header>
                             <!-- <div style="text-align: center;">

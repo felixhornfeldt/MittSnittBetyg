@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    /* background-color: #ffa500; */
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.ctr {
+    width: 100%;
+    min-height: inherit;
+}
+
+.u_ctr {
+    width: 100%;
+    min-height: inherit;
+    background-color: #0000ff;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_header_home_ctr,
+.u_header_profile_ctr {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 0;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.6); */
+}
+
+.u_header_home_link {
+    text-decoration: none;
+    margin: 0;
+    background-color: transparent;
+}
+
+.u_header_home_ctr {
+    left: 0;
+    background-color: #0000a5;
+    /* border-right: 2px solid rgba(0, 0, 0, 0.6); */
+}
+
+.u_header_profile_ctr {
+    right: 0;
+    background-color: #ffa500;
+    /* border-left: 2px solid rgba(0, 0, 0, 0.6); */
+}
+
+.u_header_home_content_ctr,
+.u_header_profile_logo_ctr {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 60px;
+    height: 60px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+i.fa-user-astronaut,
+i.fa-user,
+i.fa-home {
+    color: #555555;
+    /* color: #f1f1f1;  */
+    font-size: 28px;
+    margin: 0;
+}
+
+.u_header_profile_ctr:hover i.fa-user-astronaut,
+.u_header_profile_ctr:hover i.fa-user,
+.u_header_home_ctr:hover i.fa-home {
+    color: #f1f1f1;
+}
+
+/* New */
+
+.u_header_profile_content_ctr {
+    /* display: none; */
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+    background-color: #000000;
+    transition: width 2000ms linear, height 2000ms linear;
+}
+
+.transition-toggle {
+    /* display: block; */
+    transition: width 2000ms linear, height 2000ms linear;
+    width: 200px;
+    height: 250px;
+}
