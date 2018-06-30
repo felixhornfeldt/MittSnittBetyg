@@ -55,7 +55,27 @@
                                             <i class="far fa-user"></i>
                                         </div>
                                     </div>
-                                    <div class="u_header_profile_content_ctr"></div>
+                                    <div class="u_header_profile_content_ctr">
+                                        <div class="u_header_profile_content_close_ctr">
+                                            <i class="fas fa-times"></i>
+                                        </div>
+                                        <div class="u_header_profile_content_name_ctr">
+                                            <h1 class="u_header_profile_content_name">Hej <?php echo $_SESSION['user_firstname']; ?></h1>
+                                        </div>
+                                        <div class="u_header_profile_content_links_ctr">
+                                            <div class="u_header_profile_content_link_settings_ctr">
+                                                <a href="" class="u_header_profile_content_link">Inställningar <i class="fas fa-user-cog"></i></a>
+                                            </div>
+                                            <div class="u_header_profile_content_link_faq_ctr">
+                                                <a href="" class="u_header_profile_content_link">FAQ <i class="fas fa-question-circle"></i></a>
+                                            </div>
+                                            <div class="u_header_profile_content_link_logout_ctr">
+                                                <form action="./assets/php/actions/act_u_logout.php" method="POST" class="u_logout_form">
+                                                    <button type="submit" class="u_header_profile_content_form_logout_btn" name="sbtn_logout">Logga ut <i class="fas fa-sign-out-alt"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </header>
                             <!-- <div style="text-align: center;">

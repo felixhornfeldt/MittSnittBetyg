@@ -31,6 +31,7 @@ if (isset($_POST["login_submit_b"])) {
                         exit();
                     } elseif ($hashedPwdCheck === true) {
                         $_SESSION['user_id'] = $row['user_id'];
+                        $_SESSION['user_firstname'] = $row['user_firstname'];
                         echo $_SESSION['user_id'];
                         header("Location: ./../../../user.php");
                         exit();

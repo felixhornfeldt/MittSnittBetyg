@@ -49,6 +49,7 @@ if (isset($_POST["signup_submit_b"])) {
                             $result = mysqli_query($conn, $sql);
                             $row = mysqli_fetch_assoc($result);
                             $_SESSION['user_id'] = $row['user_id'];
+                            $_SESSION['user_firstname'] = $row['user_firstname'];
                             header("Location: ./../../../user.php");
                             exit();
                         }
