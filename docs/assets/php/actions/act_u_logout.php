@@ -1,4 +1,5 @@
 <?php
 
-header("Location: ./../../../user.php?".mt_rand()."=foundfile");
+header("Location: ./../../../index.php?".mt_rand()."=foundfile");
+session_destroy();
 exit();
