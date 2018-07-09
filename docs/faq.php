@@ -78,42 +78,6 @@
                                     </div>
                                 </div>
                             </header>
-                            <div class="u_new_grade_form_ctr">
-                                <div class="u_new_grade_btn_ctr">
-                                    <button class="u_new_grade_btn">Ny <i class="fas fa-plus"></i></button>
-                                </div>
-                                <div class="u_new_grade_form_box">
-                                    <form action="./assets/php/actions/act_g_upload.php" method="post" class="u_new_grade_form">
-                                        <div class="u_new_grade_form_course_name_ctr">
-                                            <label for="course_name" class="u_new_grade_label_for_input">Kursnamn</label>
-                                            <input type="text" name="course_name" class="u_new_grade_form_input" id="course_name">
-                                        </div>
-                                        <div class="u_new_grade_form_course_value_ctr">
-                                            <label for="course_value" class="u_new_grade_label_for_input">Kurspoäng</label>
-                                            <input type="number" name="course_value" class="u_new_grade_form_input" id="course_value">
-                                        </div>
-                                        <div class="u_new_grade_form_letter_ctr">
-                                            <label for="grade_letter" class="u_new_grade_label_for_input">Betyg</label>
-                                            <input type="text" name="course_grade" class="u_new_grade_form_input" id="grade_letter">
-                                        </div>
-                                        <div class="u_new_grade_form_submit_btn_ctr">
-                                            <button type="submit" name="btn_submit" class="u_new_grade_form_submit_btn">Spara</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="u_grade_ctr">
-                                <div class="u_grade_content_ctr">
-                                    <?php
-                                        include_once './assets/php/includes/u_grade_box_maker.php';
-                                    ?>
-                                </div>
-                                <div class="u_conclusion_ctr">
-                                    <?php
-                                        include_once './assets/php/includes/u_conclusion_maker.php';
-                                    ?>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

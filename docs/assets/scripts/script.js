@@ -101,6 +101,17 @@ function toogleClassProfileContent() {
     });
 }
 
+function editGradeInfo() {
+    $(".u_manage_edit").click(function(){
+        console.log("clicked edit button");
+        let uniqueId = this.attr("data-grade-btn-id");
+        console.log(uniqueId);
+        let gradeName = document.querySelector("[data-grade-name-id]='"+uniqueId+"'").textContent;
+        let gradeLetter = document.querySelector("[data-grade-letter-id]='"+uniqueId+"'").textContent;
+        let gradeValue = document.querySelector("[data-grade-value-id]='"+uniqueId+"'").textContent;
+    });
+}
+
 $(function() {
     homeDisplayToggle();
     spinTransform();
@@ -108,4 +119,5 @@ $(function() {
     displayDeleteForm();
     displayNewGradeForm();
     toogleClassProfileContent();
+    editGradeInfo();
 })

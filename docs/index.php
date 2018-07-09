@@ -1,4 +1,4 @@
-<?php session_start()/*;session_destroy();*/?>
+<?php session_start();session_destroy(); ?>
 
 <!DOCTYPE html>
 	<html lang="en">
@@ -29,9 +29,9 @@
 		<body>
             <div class="ctr">
                 <div class="ix_home">
-                    <div style="text-align: center;">
+                    <!-- <div style="text-align: center;">
                         <a href="./user.php">User page dev mode</a>
-                    </div>
+                    </div> -->
                     <div class="ix_name_ctr">
                         <h1 class="ix_name">MittSnittBetyg</h1>
                     </div>
