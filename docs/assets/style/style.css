@@ -149,43 +149,6 @@ i.fa-arrow-alt-circle-left:hover {
     color: #ffffff;
 }
 
-/* USER PROPERTIES */
-
-.u_ctr {
-    width: 100%;
-    min-height: inherit;
-    background-color: #0000ff;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-.u_spin_ctr {
-    display: none;
-}
-
-@keyframes spinmove {
-    100%{transform: rotate(360deg);}
-}
-
-i.fa-circle-notch {
-    font-size: 48px;
-    color: #f1f1f1;
-    animation: spinmove 1500ms linear infinite;
-}
-
-.u_content_ctr {
-    display: none;
-}
-
-.u_content_box {
-    display: grid;
-    width: 100%;
-    min-height: inherit;
-    align-content: center;
-    justify-content: center;
-}
-
 /* USER HEADER PROPERTIES */
 
 .u_header_home_ctr,
@@ -198,7 +161,7 @@ i.fa-circle-notch {
     align-content: center;
     justify-content: center;
     z-index: 2;
-    cursor: pointer;
+    cursor: pointer; 
     /* border-bottom: 2px solid rgba(0, 0, 0, 0.6); */
 }
 
@@ -244,8 +207,6 @@ i.fa-home {
 .u_header_home_ctr:hover i.fa-home {
     color: #f1f1f1;
 }
-
-/* New */
 
 .u_header_profile_content_ctr {
     /* display: none; */
@@ -350,6 +311,43 @@ i.fa-times:hover {
 .u_header_profile_content_form_logout_btn:hover {
     color: #ffa500;
     transition: color 250ms linear;
+}
+
+/* USER FILE PROPERTIES */
+
+.u_ctr {
+    width: 100%;
+    min-height: inherit;
+    background-color: #0000ff;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_spin_ctr {
+    display: none;
+}
+
+@keyframes spinmove {
+    100%{transform: rotate(360deg);}
+}
+
+i.fa-circle-notch {
+    font-size: 48px;
+    color: #f1f1f1;
+    animation: spinmove 1500ms linear infinite;
+}
+
+.u_content_ctr {
+    display: none;
+}
+
+.u_content_box {
+    display: grid;
+    width: 100%;
+    min-height: inherit;
+    align-content: center;
+    justify-content: center;
 }
 
 /* USER NEW GRADE PROPERTIES */

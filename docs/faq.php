@@ -78,6 +78,7 @@
                                     </div>
                                 </div>
                             </header>
+                            <div class="faq_main_ctr"></div>
                         </div>
                     </div>
                 </div>
