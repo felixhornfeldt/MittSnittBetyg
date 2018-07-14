@@ -4,6 +4,6 @@ _**MittSnittBetyg** är en hemsida som beräknar och håller ihop dina betyg och
 
 SESSION håller id, firstname, lastname, mail, username, password
 
-transform username to lowercase 
+when click on edit, display editor element and display none on other elements of a grade. 
 
 #495057

@@ -90,13 +90,13 @@ function displayNewGradeForm() {
 }
 
 function toogleClassProfileContent() {
-    $(".u_header_profile_logo_ctr").click(function() {
-        $(".u_header_profile_content_ctr").toggleClass("transition-toggle");  
+    $(".header_profile_logo_ctr").click(function() {
+        $(".header_profile_content_ctr").toggleClass("transition-toggle");  
         $(".fa-times").toggleClass("fa-times-rotate-open");   
     });
 
     $(".fa-times").click(function() {
-        $(".u_header_profile_content_ctr").toggleClass("transition-toggle"); 
+        $(".header_profile_content_ctr").toggleClass("transition-toggle"); 
         $(".fa-times").toggleClass("fa-times-rotate-open");
     });
 }
@@ -104,11 +104,12 @@ function toogleClassProfileContent() {
 function editGradeInfo() {
     $(".u_manage_edit").click(function(){
         console.log("clicked edit button");
-        let uniqueId = this.attr("data-grade-btn-id");
+        let uniqueId = $(this).attr("data-grade-btn-id");
         console.log(uniqueId);
-        let gradeName = document.querySelector("[data-grade-name-id]='"+uniqueId+"'").textContent;
-        let gradeLetter = document.querySelector("[data-grade-letter-id]='"+uniqueId+"'").textContent;
-        let gradeValue = document.querySelector("[data-grade-value-id]='"+uniqueId+"'").textContent;
+        let gradeName = document.querySelector("[data-grade-name-id='"+uniqueId+"']").textContent;
+        let gradeLetter = document.querySelector("[data-grade-letter-id='"+uniqueId+"']").textContent;
+        let gradeValue = document.querySelector("[data-grade-value-id='"+uniqueId+"']").textContent;
+        console.log(gradeName+","+gradeLetter+","+gradeValue);
     });
 }
 
