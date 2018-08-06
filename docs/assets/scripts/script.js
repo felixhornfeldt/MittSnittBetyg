@@ -92,12 +92,12 @@ function displayNewGradeForm() {
 function toogleClassProfileContent() {
     $(".header_profile_logo_ctr").click(function() {
         $(".header_profile_content_ctr").toggleClass("transition-toggle");  
-        $(".fa-times").toggleClass("fa-times-rotate-open");   
+        $(".u_header_profile_content_close").toggleClass("fa-times-rotate-open");   
     });
 
-    $(".fa-times").click(function() {
+    $(".u_header_profile_content_close").click(function() {
         $(".header_profile_content_ctr").toggleClass("transition-toggle"); 
-        $(".fa-times").toggleClass("fa-times-rotate-open");
+        $(".u_header_profile_content_close").toggleClass("fa-times-rotate-open");
     });
 }
 

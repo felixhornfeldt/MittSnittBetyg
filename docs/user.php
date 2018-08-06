@@ -3,6 +3,15 @@
     if (!isset($_SESSION['user_id'])){
         header("Location: ./index.php?pleaseloginorsignup=".mt_rand()."");
         exit();
+    } else {
+        include_once "./assets/php/dbh_conn.php";
+        $sqlReq = "SELECT * FROM users WHERE user_id='$_SESSION['user_id']'";
+        $sqlQuery = mysqli_query($conn, $sqlReq);
+        $sqlResult = mysqli_num_rows($sqlQuery);
+        if ($sqlResult < 1) {
+            header("Location: ./index.php?loginError=".mt_rand()."");
+            exit();
+        }
     }
 ?>
 
@@ -117,6 +126,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="u_change_grade_ctr"></div>
             </div>
 		</body>
 	</html>

@@ -3,7 +3,7 @@
     if (!isset($_SESSION['user_id'])){
         header("Location: ./index.php?pleaseloginorsignup=".mt_rand()."");
         exit();
-    }
+    } 
 ?>
 
 <!DOCTYPE html>
