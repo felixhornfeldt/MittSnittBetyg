@@ -448,7 +448,7 @@ i.fa-plus {
 .u_grade_ctr {
     background-color: #f1f1f1;
     border-radius: 15px;
-    width: 800px;
+    width: 900px;
     margin: 2.5vh 0vh;
 }
 
@@ -689,4 +689,196 @@ i.u_manage_delete {
     min-height: inherit;
     align-content: center;
     justify-content: center;
+}
+
+/* New change grade properties to style.css */
+
+.u_change_grade_ctr {
+    width: 100%;
+    min-height: inherit;
+    height: 100%;
+    background-color: #000000;
+    z-index: 3;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_change_grade_close_ctr {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 75px;
+    width: 75px;
+    background-color: transparent;
+}
+
+.u_change_grade_close {
+    color: #ffffff !important;
+    font-size: 36px !important;
+    cursor: pointer;
+    margin: 0;
+    transition: color 250ms linear !important;
+}
+
+.u_change_grade_close:hover {
+    color: #ff0000 !important;
+    transition: color 250ms linear !important;
+}
+
+/* Change grade content properties */
+
+.u_change_grade_content_ctr {
+    width: 900px;
+    height: 250px;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.u_change_grade_ct_form_ctr {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.u_change_grade_ct_form {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.u_change_grade_ct_form_content {
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr;
+}
+
+.u_change_grade_ct_form_ct_name_ctr,
+.u_change_grade_ct_form_ct_letter_ctr,
+.u_change_grade_ct_form_ct_value_ctr {
+    grid-row: span 1;
+    display: grid;
+    align-content: center;
+    justify-content: left;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.u_change_grade_ct_form_ct_name_ctr {
+    grid-column: span 3;
+    margin-left: 11%;;
+}
+
+.u_change_grade_ct_form_ct_letter_ctr,
+.u_change_grade_ct_form_ct_value_ctr {
+    grid-column: span 1;
+}
+
+/* Change grade information style (label, input, paragraph) */
+
+.u_change_grade_ct_form_label {
+    margin: 0;
+    font-size: 16px;
+}
+
+.u_change_grade_ct_form_input {
+    font-size: 32px;
+    margin: 2.5px 0px;
+    min-width: 50%;
+    background: transparent;
+    /* border: 1.5px solid #00000080; */
+    border: 0;
+    /* padding: 2.5px; */
+}
+
+input:focus {
+    outline: none !important;
+}
+
+#ucgctfikn {
+    width: 120%;
+}
+
+#ucgctfib,
+#ucgctfikp {
+    width: 50%;
+}
+
+.u_change_grade_ct_form_sp {
+    margin: 0;
+    font-size: 12px;
+    display: none;
+}
+
+/* Change grade basic button properties */
+
+.ucgctbtn:focus {
+    outline: none !important;
+}
+
+.ucgctbtn {
+    padding: 10px 25px;
+    font-size: 24px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    background: transparent;
+    color: #000000;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 250ms linear !important;
+}
+
+/* "Spara" button properties */
+
+.u_change_grade_ct_form_btn_ctr {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_change_grade_ct_form_btn {
+    transition: color 250ms linear !important;
+}
+
+.u_change_grade_ct_form_btn:hover {
+    background: #00ac00;
+    color: #f1f1f1;
+    transition: color 250ms linear !important;
+    transition: background 250ms linear !important;
+}
+
+/* "Ångra" button properties */
+
+.u_change_grade_ct_re_ctr {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.u_change_grade_ct_re_btn:hover {
+    background: #dddddd;
+    transition: background 250ms linear !important;
 }

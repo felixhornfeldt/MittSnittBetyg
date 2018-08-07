@@ -71,30 +71,38 @@
                     </div>
                 </div>
                 <div class="u_change_grade_ctr">
-                    <!-- <form action="./assets/" method="POST" class="u_change_grade_form">
-                        <div class="u_change_grade_inputs_ctr">
-                            <div class="u_change_grade_name_ctr">
-                                <input type="text" class="u_change_grade_input" name="gradeName">
-                            </div>
-                            <div class="u_change_grade_letter_ctr"></div>
-                            <div class="u_change_grade_value_ctr"></div>
-                        </div>
-                        <div class="u_change_grade_options_ctr">
-                            <div class="u_change_grade_reload_ctr">
-                                <button class="u_change_grade_btn">Ångra</button>
-                            </div>
-                            <div class="u_change_grade_delete_ctr">
-                                <button class="u_change_grade_btn">Avbryt</button>
-                            </div>
-                            <div class="u_change_grade_save_ctr">
-                                <button class="u_change_grade_btn" type="submit" name="ucgbtn_submit">Spara</button>
-                            </div>
-                        </div>
-                    </form> -->
                     <div class="u_change_grade_close_ctr">
                         <i class="fas fa-times u_change_grade_close"></i>
                     </div>
-                    <div class="u_change_grade_content_ctr"></div>
+                    <div class="u_change_grade_content_ctr">
+                        <div class="u_change_grade_ct_form_ctr">
+                            <form action="./assets/php/actions/" method="POST" class="u_change_grade_ct_form">
+                                <div class="u_change_grade_ct_form_content">
+                                    <div class="u_change_grade_ct_form_ct_name_ctr">
+                                        <label for="ucgctfikn" class="u_change_grade_ct_form_label">Kursnamn</label>
+                                        <input type="text" class="u_change_grade_ct_form_input" id="ucgctfikn">
+                                        <p class="u_change_grade_ct_form_sp">Tidigare:</p>
+                                    </div>
+                                    <div class="u_change_grade_ct_form_ct_letter_ctr">
+                                        <label for="ucgctfib" class="u_change_grade_ct_form_label">Betyg</label>
+                                        <input type="text" class="u_change_grade_ct_form_input" id="ucgctfib">
+                                        <p class="u_change_grade_ct_form_sp">Tidigare:</p>
+                                    </div>
+                                    <div class="u_change_grade_ct_form_ct_value_ctr">
+                                        <label for="ucgctfikp" class="u_change_grade_ct_form_label">Kurspoäng</label>
+                                        <input type="number" class="u_change_grade_ct_form_input" id="ucgctfikp">
+                                        <p class="u_change_grade_ct_form_sp">Tidigare:</p>
+                                    </div>
+                                </div>
+                                <div class="u_change_grade_ct_form_btn_ctr">
+                                    <button class="u_change_grade_ct_form_btn ucgctbtn" type="submit" name="ucgbtn_submit">Spara</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="u_change_grade_ct_re_ctr">
+                            <button class="u_change_grade_ct_re_btn ucgctbtn">Ångra</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 		</body>

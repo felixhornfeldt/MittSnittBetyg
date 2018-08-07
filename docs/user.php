@@ -5,7 +5,7 @@
         exit();
     } else {
         include_once "./assets/php/dbh_conn.php";
-        $sqlReq = "SELECT * FROM users WHERE user_id='$_SESSION['user_id']'";
+        $sqlReq = "SELECT * FROM users WHERE user_id='$_SESSION[user_id]'";
         $sqlQuery = mysqli_query($conn, $sqlReq);
         $sqlResult = mysqli_num_rows($sqlQuery);
         if ($sqlResult < 1) {
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="header_profile_content_ctr">
                                     <div class="header_profile_content_close_ctr">
-                                        <i class="fas fa-times"></i>
+                                        <i class="fas fa-times u_header_profile_content_close"></i>
                                     </div>
                                     <div class="header_profile_content_name_ctr">
                                         <h1 class="header_profile_content_name">Hej <?php if(isset($_SESSION['user_firstname'])){echo $_SESSION['user_firstname'];}else{echo "";} ?></h1>
@@ -126,7 +126,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="u_change_grade_ctr"></div>
+                <div class="u_change_grade_ctr">
+                    <div class="u_change_grade_close_ctr">
+                        <i class="fas fa-times u_change_grade_close"></i>
+                    </div>
+                    <div class="u_change_grade_content_ctr" style="display: none;">
+                        <div class="u_change_grade_ct_form_ctr">
+                            <form action="./assets/php/actions/act_u_change_grade.php" method="POST" class="u_change_grade_ct_form">
+                                <div class="u_change_grade_ct_form_content">
+                                    <div class="u_change_grade_ct_form_ct_name_ctr">
+                                        <label for="ucgctfikn" class="u_change_grade_ct_form_label">Kursnamn</label>
+                                        <input type="text" class="u_change_grade_ct_form_input" id="ucgctfikn" data-para-id="ucgctfspkn">
+                                        <p class="u_change_grade_ct_form_sp" id="ucgctfspkn"></p>
+                                    </div>
+                                    <div class="u_change_grade_ct_form_ct_letter_ctr">
+                                        <label for="ucgctfib" class="u_change_grade_ct_form_label">Betyg</label>
+                                        <input type="text" class="u_change_grade_ct_form_input" id="ucgctfib" data-para-id="ucgctfspb">
+                                        <p class="u_change_grade_ct_form_sp" id="ucgctfspb"></p>
+                                    </div>
+                                    <div class="u_change_grade_ct_form_ct_value_ctr">
+                                        <label for="ucgctfikp" class="u_change_grade_ct_form_label">Kurspoäng</label>
+                                        <input type="number" class="u_change_grade_ct_form_input" id="ucgctfikp" data-para-id="ucgctfspkp">
+                                        <p class="u_change_grade_ct_form_sp" id="ucgctfspkp"></p>
+                                    </div>
+                                </div>
+                                <div class="u_change_grade_ct_form_btn_ctr">
+                                    <button class="u_change_grade_ct_form_btn ucgctbtn" type="submit" name="ucgbtn_submit">Spara</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="u_change_grade_ct_re_ctr">
+                            <button class="u_change_grade_ct_re_btn ucgctbtn">Ångra</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 		</body>
 	</html>

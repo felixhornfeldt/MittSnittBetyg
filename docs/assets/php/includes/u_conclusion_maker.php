@@ -49,6 +49,5 @@ if (!isset($_SESSION['user_id'])) {
         }
         $gradeCut = round($allCourseValues/$totalPoints, 2);
         echo '<div class="u_conclusion_grade_cut_ctr"><label for="conclusion_grade_cut" class="u_conclusion_label">Snittbetyg:</label><p class="u_conclusion_parg" id="conclusion_grade_cut">'.$gradeCut.'</p></div><div class="u_conclusion_total_points_ctr"><label for="conclusion_total_points" class="u_conclusion_label">Lästa poäng:</label><p class="u_conclusion_parg" id="conclusion_total_points">'.$totalPoints.'</p></div>';
-        exit();
     }
 }

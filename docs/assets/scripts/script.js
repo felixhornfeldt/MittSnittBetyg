@@ -101,15 +101,66 @@ function toogleClassProfileContent() {
     });
 }
 
-function editGradeInfo() {
+function toogleChangeGradeElement() {
+    $(".u_change_grade_close").click(function(){
+        $(".u_change_grade_ctr").fadeToggle(1000, function(){
+            $(".u_change_grade_content_ctr").css("display", "none");
+        });
+    });
+
     $(".u_manage_edit").click(function(){
-        console.log("clicked edit button");
+        $(".u_change_grade_ctr").css("display", "grid");
+
+        $(".u_change_grade_content_ctr").fadeToggle(750, function(){
+            $(".u_change_grade_content_ctr").css("display", "grid");
+        });
+
         let uniqueId = $(this).attr("data-grade-btn-id");
-        console.log(uniqueId);
-        let gradeName = document.querySelector("[data-grade-name-id='"+uniqueId+"']").textContent;
-        let gradeLetter = document.querySelector("[data-grade-letter-id='"+uniqueId+"']").textContent;
-        let gradeValue = document.querySelector("[data-grade-value-id='"+uniqueId+"']").textContent;
-        console.log(gradeName+","+gradeLetter+","+gradeValue);
+        let editData = editGradeInfo(uniqueId);
+
+        function editGradeInfo(id) {
+            let gradeName = document.querySelector("[data-grade-name-id='"+id+"']").textContent;
+            let gradeLetter = document.querySelector("[data-grade-letter-id='"+id+"']").textContent;
+            let gradeValue = document.querySelector("[data-grade-value-id='"+id+"']").textContent;
+            let gradeArr = [gradeName,gradeLetter,gradeValue];
+            return gradeArr;
+        }
+
+        $("#ucgctfikn").val(editData[0]);
+        $("#ucgctfib").val(editData[1]);
+        $("#ucgctfikp").val(editData[2]);
+
+        let changeGradePara = document.querySelectorAll(".u_change_grade_ct_form_sp");
+        for (let i = 0; i < changeGradePara.length; i++) {
+            $(changeGradePara[i]).attr("data-og-value", editData[i]);
+            changeGradePara[i].textContent = "Tidigare: "+editData[i];
+            $(changeGradePara[i]).css("display", "none");
+        }
+    });
+}
+
+function inputChangeFunc() {
+    $(".u_change_grade_ct_form_input").on("input", function(){
+        let ucgParaEl = "#"+$(this).attr("data-para-id")+"";
+        let gradeOgValue = $(ucgParaEl).attr("data-og-value");
+        if (this.value === gradeOgValue) {
+            $(ucgParaEl).css("display", "none");
+        } else {
+            $(ucgParaEl).css("display", "block");
+        }
+    });
+}
+
+function inputOgValuesToggle() {
+    $(".u_change_grade_ct_re_btn").click(function(){
+        console.log("clicked ångra button");
+        let inputs = document.querySelectorAll(".u_change_grade_ct_form_input");
+        let inputOgValueParas = document.querySelectorAll(".u_change_grade_ct_form_sp");
+        for (let i = 0; i < inputs.length; i++) {
+            let ogValue = $(inputOgValueParas[i]).attr("data-og-value");
+            $(inputs[i]).val(ogValue);
+            $(inputOgValueParas[i]).css("display", "none");
+        }
     });
 }
 
@@ -120,5 +171,7 @@ $(function() {
     displayDeleteForm();
     displayNewGradeForm();
     toogleClassProfileContent();
-    editGradeInfo();
-})
+    toogleChangeGradeElement();
+    inputChangeFunc();
+    inputOgValuesToggle();
+});

@@ -185,121 +185,6 @@ i.fa-home {
     transition: color 250ms linear;
 }
 
-/* TO STYLE.CSS */
-
-/* USER CHANGE GRADE PROPERTIES */
-
-/* .u_change_grade_ctr {
-    width: 100%;
-    min-height: inherit;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    z-index: 3;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-}
-
-.u_change_grade_form {
-    width: 100%;
-    min-height: inherit;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.u_change_grade_inputs_ctr {
-    display: grid;
-    grid-template-columns: inherit;
-    grid-template-rows: 1fr;
-    grid-column: span 9;
-    grid-row: span 1;
-}
-
-.u_change_grade_name_ctr,
-.u_change_grade_letter_ctr,
-.u_change_grade_value_ctr  {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-row: span 1;
-    background-color: #89f433;
-}
-
-.u_change_grade_name_ctr {
-    grid-column: span 6;
-}
-
-.u_change_grade_letter_ctr {
-    grid-column: span 1;
-}
-
-.u_change_grade_value_ctr {
-    grid-column: span 2;
-}
-
-.u_change_grade_input {
-    border: 0;
-    padding: 0;
-    margin: 0;
-    height: fit-content;
-    width: 950px;
-    font-size: 100px;
-    font-weight: 300;
-    color: #f1f1f1;
-    background-color: transparent;
-    font-family: "Roboto", "Open Sans", sans-serif;
-}
-
-.u_change_grade_options_ctr {
-    display: grid;
-    grid-template-columns: inherit;
-    grid-template-rows: 1fr;
-    grid-column: span 9;
-    grid-row: span 1;
-}
-
-.u_change_grade_reload_ctr,
-.u_change_grade_delete_ctr,
-.u_change_grade_save_ctr {
-    grid-column: span 3;
-    grid-row: span 1;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-.u_change_grade_btn {
-    margin: 0;
-    font-family: "Roboto", "Open Sans", sans-serif;
-    font-size: 100px;
-    border: 0;
-    border-radius: 15px;
-    background-color: transparent;
-    color: #f1f1f1;
-    font-style: italic;
-    font-weight: 300;
-    padding: 10px;
-    height: fit-content;
-    width: fit-content;
-    cursor: pointer;
-}
-
-.u_change_grade_reload_ctr button {
-    background-color: rgba(0, 0, 0, 0.85) !important;
-}
-
-.u_change_grade_delete_ctr button {
-    background-color: #ff0000 !important;
-}
-
-.u_change_grade_save_ctr button {
-    background-color: #008000 !important;
-} */
-
-
 /* New change grade properties to style.css */
 
 .u_change_grade_ctr {
@@ -345,6 +230,146 @@ i.fa-home {
 .u_change_grade_content_ctr {
     width: 900px;
     height: 250px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #f1f1f1;
     border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.u_change_grade_ct_form_ctr {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.u_change_grade_ct_form {
+    grid-column: span 1;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.u_change_grade_ct_form_content {
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: inherit;
+    grid-template-rows: 1fr;
+}
+
+.u_change_grade_ct_form_ct_name_ctr,
+.u_change_grade_ct_form_ct_letter_ctr,
+.u_change_grade_ct_form_ct_value_ctr {
+    grid-row: span 1;
+    display: grid;
+    align-content: center;
+    justify-content: left;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    overflow: hidden;
+    font-weight: 400;
+}
+
+.u_change_grade_ct_form_ct_name_ctr {
+    grid-column: span 3;
+    margin-left: 11%;;
+}
+
+.u_change_grade_ct_form_ct_letter_ctr,
+.u_change_grade_ct_form_ct_value_ctr {
+    grid-column: span 1;
+}
+
+/* Change grade information style (label, input, paragraph) */
+
+.u_change_grade_ct_form_label {
+    margin: 0;
+    font-size: 16px;
+}
+
+.u_change_grade_ct_form_input {
+    font-size: 32px;
+    margin: 2.5px 0px;
+    min-width: 50%;
+    background: transparent;
+    /* border: 1.5px solid #00000080; */
+    border: 0;
+    /* padding: 2.5px; */
+}
+
+input:focus {
+    outline: none !important;
+}
+
+#ucgctfikn {
+    width: 120%;
+}
+
+#ucgctfib,
+#ucgctfikp {
+    width: 50%;
+}
+
+.u_change_grade_ct_form_sp {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Change grade basic button properties */
+
+.ucgctbtn:focus {
+    outline: none !important;
+}
+
+.ucgctbtn {
+    padding: 10px 25px;
+    font-size: 24px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    background: transparent;
+    color: #000000;
+    font-weight: 300;
+    border: 0;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background 250ms linear !important;
+}
+
+/* "Spara" button properties */
+
+.u_change_grade_ct_form_btn_ctr {
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.u_change_grade_ct_form_btn {
+    transition: color 250ms linear !important;
+}
+
+.u_change_grade_ct_form_btn:hover {
+    background: #00ac00;
+    color: #f1f1f1;
+    transition: color 250ms linear !important;
+    transition: background 250ms linear !important;
+}
+
+/* "Ångra" button properties */
+
+.u_change_grade_ct_re_ctr {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.u_change_grade_ct_re_btn:hover {
+    background: #dddddd;
+    transition: background 250ms linear !important;
 }
