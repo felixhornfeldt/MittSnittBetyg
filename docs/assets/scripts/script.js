@@ -159,6 +159,11 @@ function inputValueController() {
             this.value = 999;
         }
     });
+    $("#course_value").on("input", function(){
+        if (this.value >= 999) {
+            this.value = 999;
+        }
+    });
     $("#ucgctfib").on("input", function(){
         this.value = this.value.toUpperCase();
         const accValues = "ABCDEF";

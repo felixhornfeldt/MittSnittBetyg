@@ -99,7 +99,7 @@
                                         </div>
                                         <div class="u_new_grade_form_course_value_ctr">
                                             <label for="course_value" class="u_new_grade_label_for_input">Kurspoäng</label>
-                                            <input type="number" name="course_value" class="u_new_grade_form_input" id="course_value">
+                                            <input type="number" max="999" name="course_value" class="u_new_grade_form_input" id="6course_value">
                                         </div>
                                         <div class="u_new_grade_form_letter_ctr">
                                             <label for="grade_letter" class="u_new_grade_label_for_input">Betyg</label>
@@ -136,17 +136,17 @@
                                 <div class="u_change_grade_ct_form_content">
                                     <div class="u_change_grade_ct_form_ct_name_ctr">
                                         <label for="ucgctfikn" class="u_change_grade_ct_form_label">Kursnamn</label>
-                                        <input type="text" class="u_change_grade_ct_form_input" id="ucgctfikn" data-para-id="ucgctfspkn">
+                                        <input type="text" name="new_grade_name" class="u_change_grade_ct_form_input" id="ucgctfikn" data-para-id="ucgctfspkn">
                                         <p class="u_change_grade_ct_form_sp" id="ucgctfspkn"></p>
                                     </div>
                                     <div class="u_change_grade_ct_form_ct_letter_ctr">
                                         <label for="ucgctfib" class="u_change_grade_ct_form_label">Betyg</label>
-                                        <input type="text" class="u_change_grade_ct_form_input" id="ucgctfib" data-para-id="ucgctfspb">
+                                        <input type="text" name="new_grade_letter" class="u_change_grade_ct_form_input" id="ucgctfib" data-para-id="ucgctfspb">
                                         <p class="u_change_grade_ct_form_sp" id="ucgctfspb"></p>
                                     </div>
                                     <div class="u_change_grade_ct_form_ct_value_ctr">
                                         <label for="ucgctfikp" class="u_change_grade_ct_form_label">Kurspoäng</label>
-                                        <input type="number" class="u_change_grade_ct_form_input" id="ucgctfikp" data-para-id="ucgctfspkp" max="999">
+                                        <input type="number" name="new_grade_value" class="u_change_grade_ct_form_input" id="ucgctfikp" data-para-id="ucgctfspkp" max="999">
                                         <p class="u_change_grade_ct_form_sp" id="ucgctfspkp"></p>
                                     </div>
                                 </div>

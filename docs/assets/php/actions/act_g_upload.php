@@ -51,12 +51,12 @@ if (!isset($_POST["btn_submit"])) {
                         }
                         $sqlInsert = "INSERT INTO grades (user_id, g_course_name, g_course_grade, g_course_value, g_course_unique_id, g_course_delete_id) VALUES ($_SESSION[user_id], '$courseName', '$courseGrade', $courseValue, $courseUniqueId, $courseDeleteId)";
                         mysqli_query($conn, $sqlInsert);
-                        header("Location: ./../../../user.php?gradeaddsucess=".mt_rand()."");
+                        header("Location: ./../../../user.php?gradeaddsuccess=".mt_rand()."");
                         exit();
                     } else {
                         $sqlInsert = "INSERT INTO grades (user_id, g_course_name, g_course_grade, g_course_value, g_course_unique_id, g_course_delete_id) VALUES ($_SESSION[user_id], '$courseName', '$courseGrade', $courseValue, $courseUniqueId, $courseDeleteId)";
                         mysqli_query($conn, $sqlInsert);
-                        header("Location: ./../../../user.php?gradeaddsucess=".mt_rand()."");
+                        header("Location: ./../../../user.php?gradeaddsuccess=".mt_rand()."");
                         exit();
                     }
                 }
