@@ -1,8 +1,9 @@
 // function for displaying and not displaying different elements
 function homeDisplayToggle() {
-    const startHold = document.querySelector(".ix_start_hold");
-    const loginHold = document.querySelector(".ix_login_hold");
-    const signupHold = document.querySelector(".ix_signup_hold");
+    const startHold = document.querySelector(".ix_start_hold"),
+        loginHold = document.querySelector(".ix_login_hold"),
+        signupHold = document.querySelector(".ix_signup_hold");
+        
     $("#ix_form_btn_login").click(function() {
         $(startHold).fadeToggle(1000, function() {
             $(loginHold).fadeToggle(1000, function(){});
@@ -103,7 +104,7 @@ function toogleClassProfileContent() {
 
 function toogleChangeGradeElement() {
     $(".u_change_grade_close").click(function(){
-        $(".u_change_grade_ctr").fadeToggle(1000, function(){
+        $(".u_change_grade_ctr").fadeToggle(750, function(){
             $(".u_change_grade_content_ctr").css("display", "none");
         });
     });
@@ -119,16 +120,17 @@ function toogleChangeGradeElement() {
         let editData = editGradeInfo(uniqueId);
 
         function editGradeInfo(id) {
-            let gradeName = document.querySelector("[data-grade-name-id='"+id+"']").textContent;
-            let gradeLetter = document.querySelector("[data-grade-letter-id='"+id+"']").textContent;
-            let gradeValue = document.querySelector("[data-grade-value-id='"+id+"']").textContent;
-            let gradeArr = [gradeName,gradeLetter,gradeValue];
+            let gradeName = document.querySelector("[data-grade-name-id='"+id+"']").textContent,
+                gradeLetter = document.querySelector("[data-grade-letter-id='"+id+"']").textContent,
+                gradeValue = document.querySelector("[data-grade-value-id='"+id+"']").textContent,
+                gradeArr = [gradeName,gradeLetter,gradeValue];
             return gradeArr;
         }
 
         $("#ucgctfikn").val(editData[0]);
         $("#ucgctfib").val(editData[1]);
         $("#ucgctfikp").val(editData[2]);
+        $("#change_grade_id_input").val(uniqueId);
 
         let changeGradePara = document.querySelectorAll(".u_change_grade_ct_form_sp");
         for (let i = 0; i < changeGradePara.length; i++) {
@@ -143,7 +145,7 @@ function inputChangeFunc() {
     $(".u_change_grade_ct_form_input").on("input", function(){
         let ucgParaEl = "#"+$(this).attr("data-para-id")+"";
         let gradeOgValue = $(ucgParaEl).attr("data-og-value");
-        if (this.value === gradeOgValue) {
+        if (this.value.toUpperCase() === gradeOgValue) {
             $(ucgParaEl).css("display", "none");
         } else {
             $(ucgParaEl).css("display", "block");
@@ -151,9 +153,31 @@ function inputChangeFunc() {
     });
 }
 
+function inputValueController() {
+    $("#ucgctfikp").on("input", function(){
+        if (this.value >= 999) {
+            this.value = 999;
+        }
+    });
+    $("#ucgctfib").on("input", function(){
+        this.value = this.value.toUpperCase();
+        const accValues = "ABCDEF";
+        if (this.value.length > 1) {
+            if (accValues.includes(this.value[0])) {
+                this.value = this.value[0];
+            } else {
+                this.value = "";
+            }
+        } else {
+            if (!accValues.includes(this.value[0])) {
+                this.value = "";
+            }
+        }
+    });
+}
+
 function inputOgValuesToggle() {
     $(".u_change_grade_ct_re_btn").click(function(){
-        console.log("clicked ångra button");
         let inputs = document.querySelectorAll(".u_change_grade_ct_form_input");
         let inputOgValueParas = document.querySelectorAll(".u_change_grade_ct_form_sp");
         for (let i = 0; i < inputs.length; i++) {
@@ -174,4 +198,5 @@ $(function() {
     toogleChangeGradeElement();
     inputChangeFunc();
     inputOgValuesToggle();
+    inputValueController()
 });

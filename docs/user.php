@@ -146,13 +146,14 @@
                                     </div>
                                     <div class="u_change_grade_ct_form_ct_value_ctr">
                                         <label for="ucgctfikp" class="u_change_grade_ct_form_label">Kurspoäng</label>
-                                        <input type="number" class="u_change_grade_ct_form_input" id="ucgctfikp" data-para-id="ucgctfspkp">
+                                        <input type="number" class="u_change_grade_ct_form_input" id="ucgctfikp" data-para-id="ucgctfspkp" max="999">
                                         <p class="u_change_grade_ct_form_sp" id="ucgctfspkp"></p>
                                     </div>
                                 </div>
                                 <div class="u_change_grade_ct_form_btn_ctr">
                                     <button class="u_change_grade_ct_form_btn ucgctbtn" type="submit" name="ucgbtn_submit">Spara</button>
                                 </div>
+                                <input type="text" id="change_grade_id_input" name="grade_id" style="display: none;">
                             </form>
                         </div>
                         <div class="u_change_grade_ct_re_ctr">
