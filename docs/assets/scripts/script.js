@@ -144,7 +144,7 @@ function toogleChangeGradeElement() {
 function inputChangeFunc() {
     $(".u_change_grade_ct_form_input").on("input", function(){
         let ucgParaEl = "#"+$(this).attr("data-para-id")+"";
-        let gradeOgValue = $(ucgParaEl).attr("data-og-value");
+        let gradeOgValue = $(ucgParaEl).attr("data-og-value").toUpperCase();
         if (this.value.toUpperCase() === gradeOgValue) {
             $(ucgParaEl).css("display", "none");
         } else {
@@ -155,11 +155,6 @@ function inputChangeFunc() {
 
 function inputValueController() {
     $("#ucgctfikp").on("input", function(){
-        if (this.value >= 999) {
-            this.value = 999;
-        }
-    });
-    $("#course_value").on("input", function(){
         if (this.value >= 999) {
             this.value = 999;
         }
@@ -177,6 +172,12 @@ function inputValueController() {
             if (!accValues.includes(this.value[0])) {
                 this.value = "";
             }
+        }
+    });
+
+    $("#course_value").on("input", function(){
+        if (this.value >= 999) {
+            this.value = 999;
         }
     });
 }

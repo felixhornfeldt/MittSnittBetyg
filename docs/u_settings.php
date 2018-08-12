@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="header_profile_content_ctr">
                                     <div class="header_profile_content_close_ctr">
-                                        <i class="fas fa-times"></i>
+                                        <i class="fas fa-times u_header_profile_content_close"></i>
                                     </div>
                                     <div class="header_profile_content_name_ctr">
                                         <h1 class="header_profile_content_name">Hej <?php if(isset($_SESSION['user_firstname'])){echo $_SESSION['user_firstname'];}else{echo "";} ?></h1>
