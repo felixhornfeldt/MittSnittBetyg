@@ -74,6 +74,14 @@
                                 </div>
                             </div>
                         </header>
+                        <div class="set_ct_box">
+                            <div class="set_ct_head_ctr">
+                                
+                            </div>
+                            <div class="set_ct_body_ctr">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

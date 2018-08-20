@@ -300,7 +300,7 @@ i.fa-home {
     transition: color 250ms linear;
 }
 
-/* USER FILE PROPERTIES */
+/* USER.PHP FILE PROPERTIES */
 
 .u_ctr {
     width: 100%;
@@ -443,7 +443,7 @@ i.fa-plus {
     font-family: "Roboto", "Open Sans", sans-serif;
 }
 
-/* USER GRADES PROPERTIES */
+/* USER'S GRADES PROPERTIE */
 
 .u_grade_ctr {
     background-color: #f1f1f1;
@@ -585,7 +585,6 @@ i.u_manage_delete {
 
 .u_manage_delete_form_btn {
     border: 0;
-    /* background-color: #1bc21b; */
     background-color: #ff0000;
     font-size: 16px;
     cursor: pointer;
@@ -599,7 +598,6 @@ i.u_manage_delete {
 
 .u_conclusion_ctr {
     height: 50px;
-    /* background-color: #000000; */
     width: 100%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -646,56 +644,6 @@ i.u_manage_delete {
 .u_change_grade_ctr {
     width: 100%;
     min-height: inherit;
-    background-color: rgba(0, 0, 0, 0.15);
-    z-index: 2;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-/* USER SETTINGS FILE PROPERTIES */
-
-.set_ctr {
-    width: 100%;
-    min-height: inherit;
-    background-color: #ff0095;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-.set_content_ctr {
-    display: grid;
-    width: 100%;
-    min-height: inherit;
-    align-content: center;
-    justify-content: center;
-}
-
-/* FAQ FILE PROPERTIES */
-
-.faq_ctr {
-    width: 100%;
-    min-height: inherit;
-    background-color: #00ac00;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-
-.faq_content_ctr {
-    display: grid;
-    width: 100%;
-    min-height: inherit;
-    align-content: center;
-    justify-content: center;
-}
-
-/* New change grade properties to style.css */
-
-.u_change_grade_ctr {
-    width: 100%;
-    min-height: inherit;
     height: 100%;
     background-color: #000000;
     z-index: 3;
@@ -733,7 +681,7 @@ i.u_manage_delete {
     transition: color 250ms linear !important;
 }
 
-/* Change grade content properties */
+/* change grade content properties */
 
 .u_change_grade_content_ctr {
     width: 900px;
@@ -791,7 +739,7 @@ i.u_manage_delete {
     grid-column: span 1;
 }
 
-/* Change grade information style (label, input, paragraph) */
+/* change grade information style (label, input, paragraph) */
 
 .u_change_grade_ct_form_label {
     margin: 0;
@@ -803,9 +751,7 @@ i.u_manage_delete {
     margin: 2.5px 0px;
     min-width: 50%;
     background: transparent;
-    /* border: 1.5px solid #00000080; */
     border: 0;
-    /* padding: 2.5px; */
 }
 
 input:focus {
@@ -827,7 +773,7 @@ input:focus {
     display: none;
 }
 
-/* Change grade basic button properties */
+/* change grade basic button properties */
 
 .ucgctbtn:focus {
     outline: none !important;
@@ -881,4 +827,68 @@ input:focus {
 .u_change_grade_ct_re_btn:hover {
     background: #dddddd;
     transition: background 250ms linear !important;
+}
+
+/* USER SETTINGS FILE PROPERTIES */
+
+.set_ctr {
+    width: 100%;
+    min-height: inherit;
+    background-color: #ff0095;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template: none;
+}
+
+.set_content_ctr {
+    display: grid;
+    width: 100%;
+    min-height: inherit;
+    align-content: center;
+    justify-content: center;
+}
+
+/* user settings content */
+
+.set_ct_box {
+    display: grid;
+    width: 100%;
+    min-height: inherit;
+    align-content: center;
+    justify-content: center;
+}
+
+.set_ct_head_ctr,
+.set_ct_body_ctr {
+    width: 900px;
+    min-height: 50px;
+    margin: 12.5px;
+    max-width: 900px;
+    background-color: #f1f1f1;
+}
+
+/* FAQ FILE PROPERTIES */
+
+.faq_ctr {
+    width: 100%;
+    min-height: inherit;
+    background-color: #00ac00;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.faq_content_ctr {
+    display: grid;
+    width: 100%;
+    min-height: inherit;
+    align-content: center;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:600px) {
+
 }
